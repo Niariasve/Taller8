@@ -5,6 +5,8 @@ public class SistemaAtencionMedico {
     private List<Paciente> pacientes;
     private List<Medico> medicos;
     private List<ServicioMedico> serviciosMedicos;
+    public static final int edadMayor = 65;
+    public static final int descuent6o = 0.25;
 
     public SistemaAtencionMedico() {
         this.pacientes = new ArrayList<>();

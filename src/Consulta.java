@@ -1,10 +1,7 @@
 import java.util.List;
 
 public class Consulta {
-    public int dia;
-    public int mes;
-    public int año;
-    private String hora;
+    private Date fecha;
     private Paciente paciente;
     private Medico medico;
     private ServicioMedico servicioMedico;
@@ -13,24 +10,21 @@ public class Consulta {
     private String tratamiento;
     private List<String> examenesMedicos;
 
-    public Consulta(int dia, int mes, int año, String hora, Paciente paciente, Medico medico, ServicioMedico servicioMedico, String diagnostico, String tratamiento, List<String> examenesMedicos) {
-        this.dia = dia;
-        this.mes = mes;
-        this.año = año;
-        this.hora = hora;
+    public Consulta(Paciente paciente, Medico medico, ServicioMedico servicioMedico, String tratamiento, ) {
         this.servicioMedico = servicioMedico;
         this.paciente = paciente;
         this.medico = medico;
         this.realizada = false;
     }
 
-    public String getHora() {
-        return hora;
+    public Date getFecha(){
+        return fecha;
+
     }
 
-    public void setHora(String hora) {
-        this.hora = hora;
-    }
+   public void setFecha(Date fecha){
+        this.fecha = fecha;
+   }
 
     public Paciente getPaciente() {
         return paciente;
