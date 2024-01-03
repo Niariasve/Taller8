@@ -3,7 +3,7 @@ public class Persona {
     private int edad;
     private String genero;
     private String direccion;
-    private String telefono;
+    private Telefono telefono;
     private String correoElectronico;
 
     public Persona(String nombre, int edad, String genero, String direccion, String telefono, String correoElectronico) {
